@@ -4,9 +4,24 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ArchTauruS</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            body {
+                min-height: 100vh;
+                display: flex;
+            }
+            #sidebar {
+                min-width: 200px;
+                box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
+            }
+        </style>
     </head>
     <body>
-        <h1>ArchTauruS</h1>
-        <a href="/p5js-sketches/">p5.js sketches</a>
+        <iframe id="sidebar" width="10%" title="sidebar" src="sidebar.html" frameborder="0"></iframe>
+        <iframe title="content" width="90%" name="main" src="home.html" frameborder="0"></iframe>
     </body>
 </html>

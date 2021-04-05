@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #eee;
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            a {
+                text-decoration: none;
+                color: blue;
+            }
+            .active {
+                color: red;
+            }
+        </style>
+        <base target="main" />
+    </head>
+    <body>
+        <h1><a href="home.html" class="active">ArchTauruS</a></h1>
+        <nav>
+            <a href="https://archtaurus.github.io/p5js-sketches">P5.JS SKETCHES</a>
+        </nav>
+        <script>
+            const links = document.querySelectorAll('a')
+            links.forEach((link) => {
+                link.addEventListener('click', (e) => {
+                    links.forEach((link) => link.classList.remove('active'))
+                    e.target.classList.add('active')
+                    console.log(e.target.classList)
+                })
+            })
+        </script>
+    </body>
+</html>
