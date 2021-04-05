@@ -16,13 +16,16 @@
                 flex-direction: column;
                 gap: 0.5rem;
             }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1em;
+            }
             nav {
                 display: flex;
                 flex-direction: column;
                 gap: 0.5rem;
-            }
-            h1 {
-                font-size: 1.5em;
             }
             a {
                 text-decoration: none;
@@ -36,8 +39,10 @@
     </head>
     <body>
         <h1><a href="home.html" class="active">ArchTauruS</a></h1>
+        <hr />
         <nav>
-            <a href="https://archtaurus.github.io/p5js-sketches">P5.JS SKETCHES</a>
+            <h2>P5.JS SKETCHES</h2>
+            <a href="https://archtaurus.github.io/p5js-sketches/digit-clock">Digit Clock</a>
         </nav>
         <script>
             const links = document.querySelectorAll('a')
